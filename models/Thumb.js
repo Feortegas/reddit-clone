@@ -26,10 +26,10 @@ Thumb.init(
     },
     comment_id: {
       type: DataTypes.INTEGER,
-      allowNull: true,
       references: {
         model: 'comment',
-        key: 'id'
+        key: 'id',
+        allowNull: true
       }
     },
     thumbs_up: {
@@ -41,7 +41,7 @@ Thumb.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Thumb'
+    modelName: 'thumb'
   }
 );
 

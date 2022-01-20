@@ -4,7 +4,6 @@ const thumbdata = [
   {
     user_id: 9,
     post_id: 1,
-    comment_id: 'NULL',
     thumbs_up: true
   },
   {
@@ -28,7 +27,6 @@ const thumbdata = [
   {
     user_id: 7,
     post_id: 6,
-    comment_id: 'NULL',
     thumbs_up: true
   },
   {
