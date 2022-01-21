@@ -26,13 +26,13 @@ const commentdata = [
     comment_content: 'I wonder same thing as the prices of memory and storage are way cheaper',
     user_id: 8,
     post_id: 5,
-    message_id: 4
+    comment_id: 4
   },
   {
     comment_content: 'I agree 100%',
     user_id: 4,
     post_id: 5,
-    message_id: 5
+    comment_id: 5
   },
   {
     comment_content: 'Nice! JavaScript is a king in my bootcamp class.',
