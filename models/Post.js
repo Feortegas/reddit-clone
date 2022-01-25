@@ -17,11 +17,8 @@ Post.init(
       allowNull: false
     },
     post_content: {
-      type: DataTypes.BLOB,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
+      type: DataTypes.TEXT,
+      allowNull: true,
     },
     user_id: {
       type: DataTypes.INTEGER,
