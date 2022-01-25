@@ -9,14 +9,13 @@
             <p>{{post_content}}</p>
             <footer class="justify-content-start">
                 <div>
-                <button type="button" class="thumbsUp"><i class="bi bi-hand-thumbs-up"></i></button>
-                <span>{{thumbsUp_count}}</span>
-                <span><button type="button" class="thumbsDown"><i class="bi bi-hand-thumbs-down"></i></button></span>
-                <span>{{thumbsDown_count}}</span>
-                <span><a href="/post/{{id}}"><i class="bi bi-chat-left comment-link"></i> {{comments.length}} {{format_plural "comment" comments.length}}</a></span>
+                    <button type="button" class="thumbs-up"><i class="bi bi-hand-thumbs-up"></i></button>
+                    <span>{{thumbsUp_count}}</span>
+                    <span><button type="button" class="thumbs-down"><i class="bi bi-hand-thumbs-down"></i></button></span>
+                    <span>{{thumbsDown_count}}</span>
+                    <span><a href="/post/{{id}}"><i class="bi bi-chat-left comment-link"></i> {{comments.length}} {{format_plural "comment" comments.length}}{{" "}}</a></span>
                 </div>
-            </footer>
-
+            </footer
         </blockquote>
     </div>
 </div>
