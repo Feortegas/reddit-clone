@@ -11,7 +11,9 @@ router.get('/', (req, res) => {
       'id',
       'post_content',
       'title',
-      'created_at'
+      'created_at',
+      [sequelize.literal('(SELECT COUNT(*) FROM thumb WHERE post.id = thumb.post_id AND thumb.thumbs_up = true)'), 'thumbsUp_count'],
+      [sequelize.literal('(SELECT COUNT(*) FROM thumb WHERE post.id = thumb.post_id AND thumb.thumbs_up = false)'), 'thumbsDown_count']
     ],
     include: [
       {
