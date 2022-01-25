@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: italic;
+  vertical-align: baseline;
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+  color: black;
+}
+
+body {
+    background-color: #dae0e6;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: white;
+ }
+
+ header h1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    display: inline;
+  }
+
+  header a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  header nav {
+    float: right;
+    margin: 7px 0;
+  }
+ 
+ #logo-home {
+    height: 32px;
+    width: auto;
+    padding: 1px;
+  }
+
+  button {
+    background: skyblue;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+

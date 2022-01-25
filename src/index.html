@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Reddit: front page</title>
+  <link rel="stylesheet" href="./hello.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img id="logo-home" src="./images/reddit logo .png" alt="reddit logo"></a>
+    <h1>
+      <a href="/">
+        reddit
+      </a>
+    </h1>
+    <nav>
+    
+        <div class="search container">
+            <input type="text" placeholder="search">
+            <button class="search-button"></button>
+            <button class="user-action-button">Login</button>
+            <button class="user-action-button">Signup</button>
+        </div> 
+    </nav>
+
+  </header>
+
+  <div id="wrapper">
+    <section id="section-trending">
+        <div id="trending-container">
+            <h3>Trending Today</h3>
+            <div id="trending-posts-container">
+                <div id="trending-one" class="trending-highlight">
+                    <div class="trending-content">
+                        <h3>Cryptocurrency</h3>
+                         <p>Bitcoin</p>
+                    <a href="index.html"><img id="crypto" src="./images/Cryptocurrency_Website_image-1000x589.jpg" alt="crypto logo"></a>
+                </div>
+            </div>
+        </div>
+        <div id="trending-two" class="trending-highlight">
+            <div class="trending-content">
+                <h3>Covid-19</h3> 
+                <p>Latest news on Covid-19</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="popular-header">
+        <h3>Popular Posts</h3>
+        <section id="main">
+            <div>
+                <div class="container-box">
+                    <div id="updates-reddit">
+                        <div id="popular-links">
+                            <button class="fas fa-fire">Hot</button>
+                            <select>
+                                <option>everywhere</option>
+                                <option>australia</option>
+                                <option>canada</option>
+                                <option>united kingdom</option>
+                                <option>united states</option>
+                            </select>
+                            <button class="fas fa-certificate">New</button>
+                            <button class="fas fa-chart-bar">Top</button>
+                        </div>
+
+                        <div>
+                            <button class="fas fa-th-large"></button>
+                            <button class="fas fa-sort-down"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+
