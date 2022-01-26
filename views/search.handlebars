@@ -1,0 +1,15 @@
+{{#if posts.length}}
+<section class="p-3">
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/search.js"></script>
+<script src="/javascript/thumbs.js"></script>
