@@ -31,6 +31,8 @@ async function addThumbs(thumbsUp){
         'Content-Type': 'application/json'
       }
     });
+    console.log(post_id);
+    alert('test');
     document.location.reload();
 
   } catch(err) {
