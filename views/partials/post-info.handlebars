@@ -11,9 +11,17 @@
         <blockquote class="blockquote mb-0">
             <p>{{post_content}}</p>
             <footer class="justify-content-start">
-                <a href="/post/{{id}}"><i class="bi bi-chat-square"></i> {{comments.length}} {{format_plural "comment" comments.length}}</a>
-            </footer>
-
+                <div>
+                    <button type="button" data-postid = "{{id}}" class="thumbs-up-btn"><i class="bi bi-hand-thumbs-up"></i></button>
+                    <span>{{thumbsUp_count}}</span>
+                    <span><button type="button" data-postid = "{{id}}" class="thumbs-down-btn"><i class="bi bi-hand-thumbs-down"></i></button></span>
+                    <span>{{thumbsDown_count}}</span>
+                    <span><a href="/post/{{id}}"><i class="bi bi-chat-square comment-link"></i> {{comments.length}} {{format_plural "comment" comments.length}}{{" "}}</a></span>
+                </div>
+                <div></div>
+            </footer
         </blockquote>
     </div>
 </div>
+
+<script src="/javascript/thumbs.js"></script>
