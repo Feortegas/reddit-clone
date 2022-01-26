@@ -1,23 +1,21 @@
-let post_id;
-const upBtns = document.getElementsByClassName('thumbs-up-btn');
+var post_id;
+var upBtns = document.getElementsByClassName('thumbs-up-btn');
 Array.from(upBtns).forEach (element => {
   element.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
     post_id = element.dataset.postid;
     addThumbs(true);
-    return;
   });
 });
 
-const downBtns = document.getElementsByClassName('thumbs-down-btn');
+var downBtns = document.getElementsByClassName('thumbs-down-btn');
 Array.from(downBtns).forEach (element => {
   element.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
     post_id = element.dataset.postid;
     addThumbs(false);
-    return;
   });
 });
    
@@ -33,10 +31,11 @@ async function addThumbs(thumbsUp){
         'Content-Type': 'application/json'
       }
     });
+    console.log(post_id);
+    alert('test');
     document.location.reload();
 
   } catch(err) {
     alert(err);
   }
-  return;
 }
