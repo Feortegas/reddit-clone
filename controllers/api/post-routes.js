@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Post, User, Comment } = require('../../models');
+const { Post, User, Comment, Thumb } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all users
@@ -83,6 +83,25 @@ router.post('/', withAuth, (req, res) => {
     user_id: req.session.user_id
   })
     .then(dbPostData => res.json(dbPostData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+router.post('/thumbs', withAuth, (req, res) => {
+  Thumb.create({
+    user_id: req.session.user_id,
+    post_id: req.body.post_id,
+    thumbs_up: req.body.thumbsUp
+  })
+    .then(dbPostData => {
+      console.log(req.session);
+      console.log('============================');
+      console.log(req.body);
+      console.log(dbPostData);
+      res.json(dbPostData)
+    })
     .catch(err => {
       console.log(err);
       res.status(500).json(err);

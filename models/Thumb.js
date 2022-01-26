@@ -41,7 +41,12 @@ Thumb.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'thumb'
+    modelName: 'thumb',
+    uniqueKeys: {
+      thumbs_unique: {
+        fields: ['user_id', 'post_id', 'comment_id', 'thumbs_up']
+      }
+    },
   }
 );
 

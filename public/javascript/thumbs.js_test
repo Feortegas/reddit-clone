@@ -1,0 +1,59 @@
+// let selectedUpBtn = document.querySelectorAll('.thumbs-up-btn');
+// for  (let i = 0; i < selectedUpBtn.length; i++) {
+//   selectedUpBtn[i].addEventListener('click', thumbsUpClickHandler);
+// }
+
+// $(".thumbs-up-btn").click(function(event) {
+//   console.log($(event.currentTarget).Text());
+// });
+
+// let selectedDownBtn = document.querySelectorAll('.thumbs-down-btn');
+// for (let i = 0; i< selectedDownBtn.length; i++) {
+//   selectedDownBtn[i].addEventListener('click', thumbsDownClickHandler);
+// }
+
+// var thumbsUp = 'NULL';
+// var post_id = 'NULL';
+
+// function thumbsUpClickHandler(event) {
+//   event.preventDefault();
+//   thumbsUp = true;
+//   post_id = parseInt($(event.target).innerText());
+//   addThumb();
+// }
+
+// function thumbsDownClickHandler(event) {
+//   event.preventDefault();
+//   thumbsUp = false;
+//   post_id = parseInt($(event.target).innerText());
+//   addThumb();
+// }
+
+// async function addThumb() {
+//   // const post_id = window.location.toString().split('/')[
+//   //   window.location.toString().split('/').length - 1
+//   // ];
+  
+
+//   console.log(post_id);
+//   alert(thumbsUp);
+//   const response = await fetch('/api/posts/thumbs', {
+//     method: 'POST',
+//     body: JSON.stringify({
+//       post_id,
+//       thumbsUp
+//     }),
+//     headers: {
+//       'Content-Type': 'application/json'
+//     }
+//   });
+//   console.log(response);
+//   if (response.ok) {
+    
+//     document.location.reload();
+//   } else {
+//     console.log(response.statusText);
+//   }
+// }
+
+        

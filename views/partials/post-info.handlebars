@@ -9,13 +9,16 @@
             <p>{{post_content}}</p>
             <footer class="justify-content-start">
                 <div>
-                    <button type="button" class="thumbs-up"><i class="bi bi-hand-thumbs-up"></i></button>
+                    <button type="button" class="thumbs-up-btn"><i class="bi bi-hand-thumbs-up"></i>{{id}}</button>
                     <span>{{thumbsUp_count}}</span>
-                    <span><button type="button" class="thumbs-down"><i class="bi bi-hand-thumbs-down"></i></button></span>
+                    <span><button type="button" class="thumbs-down-btn"><i class="bi bi-hand-thumbs-down"></i>{{id}}</button></span>
                     <span>{{thumbsDown_count}}</span>
                     <span><a href="/post/{{id}}"><i class="bi bi-chat-left comment-link"></i> {{comments.length}} {{format_plural "comment" comments.length}}{{" "}}</a></span>
                 </div>
+                <div></div>
             </footer
         </blockquote>
     </div>
 </div>
+
+<script src="/javascript/thumbs.js"></script>
