@@ -15,14 +15,16 @@ Thumb.init(
       references: {
         model: 'user',
         key: 'id'
-      }
+      },
+      unique: 'uniqueThumb'
     },
     post_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'post',
         key: 'id'
-      }
+      },
+      unique: 'uniqueThumb'
     },
     comment_id: {
       type: DataTypes.INTEGER,
@@ -30,10 +32,12 @@ Thumb.init(
         model: 'comment',
         key: 'id',
         allowNull: true
-      }
+      },
+      unique: 'uniqueThumb'
     },
     thumbs_up: {
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
+      unique: 'uniqueThumb'
     }
   },
   {
@@ -42,11 +46,6 @@ Thumb.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'thumb',
-    uniqueKeys: {
-      thumbs_unique: {
-        fields: ['user_id', 'post_id', 'comment_id', 'thumbs_up']
-      }
-    },
   }
 );
 

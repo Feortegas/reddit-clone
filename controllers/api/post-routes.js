@@ -93,13 +93,9 @@ router.post('/thumbs', withAuth, (req, res) => {
   Thumb.create({
     user_id: req.session.user_id,
     post_id: req.body.post_id,
-    thumbs_up: req.body.thumbsUp
+    thumbs_up: req.body.thumbs_up
   })
     .then(dbPostData => {
-      console.log(req.session);
-      console.log('============================');
-      console.log(req.body);
-      console.log(dbPostData);
       res.json(dbPostData)
     })
     .catch(err => {
