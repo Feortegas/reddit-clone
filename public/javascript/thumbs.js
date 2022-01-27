@@ -1,5 +1,5 @@
-let post_id;
-const upBtns = document.getElementsByClassName('thumbs-up-btn');
+var post_id;
+var upBtns = document.getElementsByClassName('thumbs-up-btn');
 Array.from(upBtns).forEach (element => {
   element.addEventListener('click', (e) => {
     e.preventDefault();
@@ -10,7 +10,7 @@ Array.from(upBtns).forEach (element => {
   });
 });
 
-const downBtns = document.getElementsByClassName('thumbs-down-btn');
+var downBtns = document.getElementsByClassName('thumbs-down-btn');
 Array.from(downBtns).forEach (element => {
   element.addEventListener('click', (e) => {
     e.preventDefault();

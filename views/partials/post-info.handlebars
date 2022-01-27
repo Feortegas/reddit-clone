@@ -12,10 +12,19 @@
             <p>{{post_content}}</p>
             <footer class="justify-content-start">
                 <div class="d-flex align-items-center flex-fill">
-                    <span class="px-2"><button type="button" data-postid = "{{id}}" class="thumbs-up-btn"><i class="bi bi-hand-thumbs-up"></i></button></span>
+                    {{#if loggedIn}}
+                        <span class="px-2"><button type="button" data-postid = "{{id}}" class="thumbs-up-btn"><i class="bi bi-hand-thumbs-up"></i></button></span>
+                    {{else}}
+                        <span class="px-2"><button type="button" data-postid = "{{id}}" class="thumbs-up-btn" disabled><i class="bi bi-hand-thumbs-up"></i></button></span>
+                    {{/if}}
                     <span class="px-1">{{thumbsUp_count}}</span>
-                    <span class="px-2"><button type="button" data-postid = "{{id}}" class="thumbs-down-btn"><i class="bi bi-hand-thumbs-down"></i></button></span>
+                    {{#if loggedIn}}
+                        <span class="px-2"><button type="button" data-postid = "{{id}}" class="thumbs-down-btn"><i class="bi bi-hand-thumbs-down"></i></button></span>
+                    {{else}}
+                        <span class="px-2"><button type="button" data-postid = "{{id}}" class="thumbs-down-btn" disabled><i class="bi bi-hand-thumbs-down"></i></button></span>
+                    {{/if}}
                     <span class="px-1">{{thumbsDown_count}}</span>
+
                     <span class="px-2"><a href="/post/{{id}}"><i class="bi bi-chat-square comment-link"></i></a></span>
                     <span class="px-1"> {{comments.length}} {{format_plural "comment" comments.length}}{{" "}}</span>
                 </div>
