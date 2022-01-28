@@ -165,6 +165,39 @@
   .edit-post-form {
     margin-bottom: 5%;
   }
+
+  .tabs {
+    overflow: hidden;
+    color: black;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+  .tabs button {
+    color:black;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  } 
+
+  .tabs button:hover {
+    background-color: #ddd;
+  }
+
+  .tabs button.active {
+    background-color: #ccc;
+  }
+
+  .tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
   
   footer {
     border-top: 1px solid #ccc;
