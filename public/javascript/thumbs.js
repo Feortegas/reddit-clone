@@ -34,6 +34,6 @@ async function addThumbs(thumbsUp){
     document.location.reload();
 
   } catch(err) {
-    alert(err);
+    console.log(err);
   }
 }
