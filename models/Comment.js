@@ -12,7 +12,7 @@ Comment.init(
       autoIncrement: true
     },
     comment_content: {
-      type: DataTypes.TEXT,
+      type: DataTypes.BLOB,
       allowNull: false,
       validate: {
         len: [1]
